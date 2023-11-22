@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>Online-Shop</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Willkommen in unserem Shop</h1>
+
+  <h2>Produkt anlegen</h2>
+  <form action="index.php" method="post">
+    <label for="set-product-id">Produkt-ID:</label>
+    <input type="number" id="set-product-id" name="set-product-id" required><br>
+
+    <label for="product-name">Produktname:</label>
+    <input type="text" id="product-name" name="product-name" required><br>
+
+    <label for="product-description">Beschreibung:</label>
+    <textarea id="product-description" name="product-description" required></textarea><br>
+
+    <label for="product-price">Preis:</label>
+    <input type="number" id="product-price" name="product-price" step="0.01" required><br>
+
+    <input type="submit" value="Produkt anlegen">
+  </form>
+
+  <!-- Hier wird das Bearbeitungsformular angezeigt -->
+  <h2>Produkt bearbeiten</h2>
+  <form action="index.php" method="post">
+    <label for="edit-product-id">Produkt-ID:</label>
+    <input type="number" id="edit-product-id" name="edit-product-id" required><br>
+
+    <label for="edit-product-name">Neuer Produktname:</label>
+    <input type="text" id="edit-product-name" name="edit-product-name"><br>
+
+    <label for="edit-product-description">Neue Beschreibung:</label>
+    <textarea id="edit-product-description" name="edit-product-description"></textarea><br>
+
+    <label for="edit-product-price">Neuer Preis:</label>
+    <input type="number" id="edit-product-price" name="edit-product-price" step="0.01"><br>
+
+    <input type="submit" value="Produkt bearbeiten">
+  </form>
+  </div>
+</body>
+</html>

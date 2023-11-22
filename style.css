@@ -1,0 +1,58 @@
+/* Setzt die Standardschriftart und den Hintergrund für den gesamten Körper der Webseite */
+body {
+    font-family: Arial, sans-serif; /* Verwendet Arial oder eine generische Sans-Serif-Schriftart */
+    margin: 5; /* Entfernt den Seitenrand */
+    padding: 30px; /* Fügt Innenabstand zum Körper hinzu */
+    background-color: #f4f4f4; /* Setzt die Hintergrundfarbe auf ein helles Grau */
+}
+
+/* Stellt das Layout für die Produktabschnitte ein */
+.products {
+    display: flex; /* Nutzt Flexbox für das Layout */
+    justify-content: space-around; /* Verteilt den verfügbaren Raum gleichmäßig zwischen den Produkten */
+    gap: 30px; /* Fügt einen Abstand zwischen den Produkten hinzu */
+    display: inline; /* Erlaubt das Umreißen von Produkten, wenn der Platz begrenzt ist */
+    padding: 30px;
+}
+
+/* Definiert das Erscheinungsbild eines einzelnen Produkts */
+.product {
+    background-color: #fff; /* Setzt die Hintergrundfarbe auf Weiß */
+    border-radius: 12px; /* Rundet die Ecken des Produktrahmens ab */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Fügt einen sanften Schatten hinzu */
+    padding: 30px; /* Fügt Innenabstand hinzu */
+    margin-bottom: 30px; /* Fügt einen Abstand zwischen den Produkten hinzu */
+    width: calc(33.33% - 20px); /* Setzt die Breite auf ein Drittel des verfügbaren Platzes */
+    box-sizing: border-box; /* Berücksichtigt Padding und Border in der Breite */
+
+}
+
+/* Stil für die Überschrift eines Produkts */
+h2 {
+    font-size: 24px; /* Setzt die Schriftgröße auf 24 Pixel */
+    margin-bottom: 15px; /* Fügt einen Abstand unter der Überschrift hinzu */
+    margin: 20px;
+    padding: 20px;
+}
+
+/* Stil für Absatztexte innerhalb eines Produkts */
+p {
+    margin-bottom: 12px; /* Fügt einen Abstand am Ende des Absatzes hinzu */
+}
+
+/* Stil für den "In den Warenkorb" Button */
+input[type="submit"] {
+    padding: 10px 20px; /* Definiert den Innenabstand für den Button */
+    border: none; /* Entfernt die Button-Rahmen */
+    background-color: #4CAF50; /* Setzt die Hintergrundfarbe auf ein Grün */
+    color: white; /* Setzt die Schriftfarbe auf Weiß */
+    cursor: pointer; /* Ändert den Cursor in eine Zeigehand beim Überfahren */
+    border-radius: 4px; /* Rundet die Ecken des Buttons ab */
+    transition: background-color 0.3s; /* Fügt eine Farbübergangseffekt hinzu */
+}
+
+/* Stil für den "In den Warenkorb" Button beim Hovern */
+input[type="submit"]:hover {
+    background-color: #45a049; /* Ändert die Hintergrundfarbe beim Hovern */
+    line-height: 20px;
+}
